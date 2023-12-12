@@ -134,22 +134,6 @@
         position: relative;
       }
     </style>
-    <style>
-      .top_tree_effect{
-        margin-top: -0.5rem;
-      }
-      .top_light_effect{
-        margin-top: 4.1rem;
-      }
-      @media screen and (max-width:280px){
-        .top_tree_effect{
-          margin-top: -1.5rem;
-        }
-        .top_light_effect{
-          margin-top: 2rem;
-        }
-      }
-    </style>
   </head>
 
   <body>
@@ -194,11 +178,11 @@
       >
         <h1 class="logo me-auto me-lg-0">
           <a href="{% url 'text_page' %}">
-            <img src="{% static 'img/lg2.gif' %}" class="" alt="Logo Gif" />
+            <img draggable="false" src="{% static 'img/lg2.gif' %}" class="" alt="Logo Gif" />
           </a>
         </h1>
 
-        <nav id="navbar" class="navbar order-last order-lg-0">
+        <nav id="navbar" class="navbar order-last order-lg-0" style="z-index: 2000;">
           <ul>
             <li>
               <a style="color: #ff3939;" class="nav-link scrollto hom ts" href="{% url 'text_page' %}"
@@ -237,7 +221,7 @@
               >
             </li>
           </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
+          <i class="bi bi-list mobile-nav-toggle" style="z-index: 2000;"></i>
         </nav>
         <!-- .navbar -->
       </div>
@@ -560,10 +544,10 @@
         width: 100%;
         height: 2.5rem;
         background: linear-gradient(
-          102.57deg,
-          #dc0916,
-          #f41fd6 100%,
-          #f41fd6 0
+          45deg,
+          #840000,
+          rgb(187, 0, 0),
+          #5c0404 100%
         );
         border-radius: 1.625rem;
         transition: all 0.4s ease-in-out;
@@ -864,28 +848,103 @@
 
       /* ------ End Testimonial Css -----*/
     </style>
-    <!-- xmas card -->
+   
     <style>
+      .mob{
+        margin-top: -20rem;
+        margin-right: -2rem;
+      }
+      .top_tree_effect{
+        margin-top: -0.5rem;
+      }
+      .top_light_effect{
+        margin-top: 4.1rem;
+      }
+      @media screen and (max-width:280px){
+        .top_tree_effect{
+          margin-top: -1.5rem;
+        }
+        .top_light_effect{
+          margin-top: 2rem;
+        }
+        .card_xmas{
+          margin-top: 3rem;
+        }
+        #img_card_hover{
+          visibility: hidden;
+        }
+      }
+      @media screen and (max-width:250px)
+      {  
+        .tree{
+          width: 5rem;
+        }
+        .mob{
+          margin-top: -20rem;
+          margin-right: -2rem;
+        }
+      }
+      /* xmas card */
       .card_xmas{
-        background-color: white;
+        background-image: url("{% static '/xmas/cards/card1.png' %}");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+        text-shadow: 3px 3px 3px black;
+        border-radius: 10px;
+        transition: all 0.2s linear;
       }
       .ts{
         text-shadow: 1px 1px 1px black;
+      }
+      .ts_md_light{
+        text-shadow: 3px 3px 3px white;
+      }
+      .ts_md_light{
+        text-shadow: 3px 3px 3px black;
+      }
+      #img_card_hover{
+        transition: all 0.2s linear;
+      }
+      #xmas_cap{
+        width: 7rem;
+      }
+      .xmas_cap_top{
+        margin-left: 27.5rem;
+        margin-top: 1.5rem;
+        transform: rotate(10deg);
+      }
+      #user_exp{
+        background-image: url('{% static "xmas/cards/card_bag_1.jpg" %}');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #xmas_santa_gif{
+        transform: rotate(-10deg);
+        width: 15rem;
+        margin-top: -15rem;
+      }
+      .xmas_santa_git_top{
+        transform: rotate(10deg);
+        margin-left: 5rem;
+      }
+      #xmas_bell_top{
+        width: 5rem;
       }
     </style>
 
     <div class="container-fluid" id="container_text">
      <div >
-      <section id="readmore1">
+      <section id="readmore1" style="z-index: 3;">
         <div class="content card_xmas p-2 rounded">
-          <h3 class="main-head text-dark" style="color: rgb(22, 125, 165)"><b>ALTOS Technologies</b></h3>
-          <h3 class="mt-3 sub-head text-dark">
+          <h3 class="main-head text-light" style="color: rgb(22, 125, 165)"><b>ALTOS Technologies</b></h3>
+          <h3 class="mt-3 sub-head text-danger">
             We Deal With The Aspects Of
-            <span style="color: rgb(22, 125, 165)"
+            <span class="text-light" style="color: rgb(22, 125, 165)"
               >Professional IT Solutions</span
             >
           </h3>
-          <p class="fst-normal mt-2 text-dark">
+          <p class="fst-normal mt-2 text-light">
             Elevate your business with Altos Technologies. As a software
             development company in India, we craft custom websites and software
             solutions to fit your unique business needs. Our team of experts
@@ -904,13 +963,29 @@
         </div>
       </section>
      </div>
-      <section id="why-choose-us">
+     <div class="position-relative" style="z-index: 1;">
+      <div class="position-absolute end-0" style="margin-top: -20rem;">
+        <div class="dark_vision"></div>
+     </div>
+     </div>
+     <div class="position-relative" style="z-index: 1;">
+      <div class="position-absolute end-0 mob">
+        <img id="img_card_hover" draggable="false" src="{% static 'xmas/tree/tree_edited.png' %}" alt="">
+     </div>
+     </div>
+
+      <section id="why-choose-us" style="z-index: 3;">
         <div class="row container">
           <div class="col-12">
+            <div class="position-relative" style="z-index: 1;">
+              <div class="position-absolute xmas_cap_top">
+                <img id="xmas_cap" draggable="false" src="{% static 'xmas/decor/cap.png' %}" alt="">
+             </div>
+             </div>
             <h4 style="color: rgb(243, 243, 243)">//Why Choose Us</h4>
             <h3 style="color: #ffff">
               Some Of The Reason For Choosing
-              <span style="color: #0fa49b">Our IT Solutions</span>
+              <span style="color: #ff3939">Our IT Solutions</span>
             </h3>
             <p class="sub-head">
               Discover why ALTOS Technologies is the premier choice for IT
@@ -919,16 +994,22 @@
           </div>
         </div>
       </section>
+      
       <section id="Other-details">
         <div class="container">
           <div class="row">
             <div class="col-lg-4">
               <div class="icon-box mt-5 mt-5 mt-lg-0">
+                <div class="position-relative" style="z-index: 1;">
+                  <div class="position-absolute" style="margin-top: -5rem;margin-left: -0.6rem;">
+                    <img width="100rem" draggable="false" src="{% static 'xmas/decor/xmaspap_peek.png' %}" alt="">
+                 </div>
+                 </div>
                 <div class="icon-box-content">
                   <i class="bx bx-receipt" style="color: #0fa49b"></i>
                 </div>
 
-                <div class="other-content">
+                <div id="user_exp" class="other-content">
                   <h5>User Experience</h5>
                   <p>
                     Our Team of Experienced Professionals is Committed to
@@ -943,7 +1024,11 @@
                 <div class="icon-box-content">
                   <i class="bx bx-support" style="color: #0fa49b"></i>
                 </div>
-
+                <div class="position-relative" style="z-index: 1;">
+                  <div class="position-absolute" style="margin-top: -5rem;margin-left: -6rem;">
+                    <img width="100rem" draggable="false" src="{% static 'xmas/decor/xmas_elf_no_bg.png' %}" alt="">
+                 </div>
+                 </div>
                 <div class="other-content">
                   <h4>Quick Support</h4>
                   <p>
@@ -960,7 +1045,11 @@
                 <div class="icon-box-content">
                   <i class="bx bx-shield" style="color: #0fa49b"></i>
                 </div>
-
+                <div class="position-relative" style="z-index: 1;">
+                  <div class="position-absolute" style="margin-top: -5rem;margin-left: -6.5rem;">
+                    <img width="100rem" draggable="false" src="{% static 'xmas/decor/xams_deer2.png' %}" alt="">
+                 </div>
+                 </div>
                 <div class="other-content">
                   <h4>Cyber Security</h4>
                   <p>
@@ -975,7 +1064,11 @@
                 <div class="icon-box-content">
                   <i class="bx bx-cube-alt" style="color: #0fa49b"></i>
                 </div>
-
+                <div class="position-relative" style="z-index: 1;">
+                  <div class="position-absolute" style="margin-top: -4.5rem;margin-left: -5rem;">
+                    <img width="60rem" draggable="false" src="{% static 'xmas/decor/xmas_biscuit.png' %}" alt="">
+                 </div>
+                 </div>
                 <div class="other-content">
                   <h4>Industrial standards</h4>
                   <p>
@@ -996,7 +1089,11 @@
                     style="color: #0fa49b"
                   ></ion-icon>
                 </div>
-
+                <div class="position-relative" style="z-index: 1;">
+                  <div class="position-absolute" style="margin-top: -5rem;margin-left: -6rem;">
+                    <img width="80rem" draggable="false" src="{% static 'xmas/decor/xams_snoman_peek_no_bg_mirror.png' %}" alt="">
+                 </div>
+                 </div>
                 <div class="other-content">
                   <h4>Unique Designs</h4>
                   <p>
@@ -1013,7 +1110,11 @@
                   <ion-icon name="people-outline" style="color: #0fa49b">
                   </ion-icon>
                 </div>
-
+                <div class="position-relative" style="z-index: 1;">
+                  <div class="position-absolute" style="margin-top: -4rem;margin-left: -6.2rem;">
+                    <img width="100rem" draggable="false" src="{% static 'xmas/decor/present.png' %}" alt="">
+                 </div>
+                 </div>
                 <div class="other-content">
                   <h4>Customized Services</h4>
                   <p>
@@ -1031,7 +1132,7 @@
         <div class="row">
           <div class="col-md-12 d-flex justify-content-center">
             <h1 class="visible-head">
-              Our<span style="color: rgb(39, 112, 141)"> Technologies</span>
+              Our<span class="ts_md_light" style="color: #e70000"> Technologies</span>
             </h1>
           </div>
         </div>
@@ -1079,6 +1180,11 @@
           </div>
         </div>
       </section> -->
+      <div class="position-relative" style="z-index: 1;">
+        <div class="position-absolute xmas_santa_git_top">
+          <img id="xmas_santa_gif" draggable="false" src="{% static 'xmas/gifs/xmas_santa.gif' %}" alt="">
+       </div>
+       </div>
       <section>
         <div class="content content-right">
           <div class="content-box-tech">
@@ -1752,7 +1858,7 @@
     <!-- Central Modal Medium Success-->
 
     <footer id="footer">
-      <div style="background-image: linear-gradient(black,red,black);" class="footer-top">
+      <div class="footer-top">
         <div class="container">
           <div class="row">
             <div class="col-lg-5 col-md-6">
@@ -1969,6 +2075,14 @@
                 $('.wire').append('<li></li>')
             }
         })
+    })
+    $(document).ready(function(){
+      $('.card_xmas').on('mouseenter',function(){
+        $('#img_card_hover').css({'opacity':0.5})
+      })
+      $('.card_xmas').on('mouseleave',function(){
+        $('#img_card_hover').css({'opacity':1})
+      })
     })
     </script>
 
