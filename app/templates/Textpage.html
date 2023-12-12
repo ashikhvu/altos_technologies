@@ -931,12 +931,41 @@
       #xmas_bell_top{
         width: 5rem;
       }
+      .xmas_silk_gif{
+        margin-top: 3rem;
+        margin-left: 2rem;
+        transform: rotate(-35deg);
+      }
+      .xmas_star_gif_top{
+        margin-top: -4rem;
+        margin-right: 8rem;
+      }
+      #xmas_star_gif{
+        width: 15rem;
+      }
+      #xmas_bell{
+        width: 5rem;
+      }
+      .xmas_bell_top{
+        /* background-image: url("{% static 'xmas/decor/xmas_ball.png' %}"); */
+        margin-top: -1rem;
+        margin-left: 1rem;
+        /* width: 100%;
+        height: 100%; */
+        /* background-repeat: no-repeat;
+        background-size: contain; */
+      }
     </style>
 
     <div class="container-fluid" id="container_text">
-     <div >
+     <div class="">
       <section id="readmore1" style="z-index: 3;">
         <div class="content card_xmas p-2 rounded">
+          <div class="position-relative" style="z-index: 1;">
+            <div class="position-absolute xmas_silk_gif">
+              <img width="150rem" draggable="false" src="{% static 'xmas/gifs/xmas-silk.gif' %}" alt="">
+          </div>
+          </div>
           <h3 class="main-head text-light" style="color: rgb(22, 125, 165)"><b>ALTOS Technologies</b></h3>
           <h3 class="mt-3 sub-head text-danger">
             We Deal With The Aspects Of
@@ -1188,6 +1217,12 @@
       <section>
         <div class="content content-right">
           <div class="content-box-tech">
+            <div class="position-relative" style="z-index: 1;">
+              <div class="position-absolute end-0 xmas_bell_top">
+                <img id="xmas_bell" draggable="false" src="{% static 'xmas/gifs/bells.gif' %}" alt="">
+            </div>
+            </div>
+      
             <h4 class="visible-head">ERP</h4>
             <p>
               Simplify your business operations with our innovative ERP software
@@ -1211,6 +1246,13 @@
             </div>
           </div>
           <div class="content-box-tech">
+
+            <div class="position-relative" style="z-index: 1;">
+              <div class="position-absolute end-0 xmas_bell_top">
+                <img id="xmas_bell" draggable="false" src="{% static 'xmas/gifs/bells.gif' %}" alt="">
+            </div>
+            </div>
+
             <h4 class="visible-head">HRMS</h4>
             <p>
               Streamline your workforce management with our cutting-edge HRMS
@@ -1275,6 +1317,13 @@
       <section>
         <div class="content content-right">
           <div class="content-box-tech">
+
+            <div class="position-relative" style="z-index: 1;">
+              <div class="position-absolute end-0 xmas_bell_top">
+                <img id="xmas_bell" draggable="false" src="{% static 'xmas/gifs/bells.gif' %}" alt="">
+            </div>
+            </div>
+            
             <h4 class="visible-head">CRM</h4>
             <p>
               Unlock the full potential of your workforce management with the
@@ -1299,6 +1348,13 @@
             </div>
           </div>
           <div class="content-box-tech">
+
+            <div class="position-relative" style="z-index: 1;">
+              <div class="position-absolute end-0 xmas_bell_top">
+                <img id="xmas_bell" draggable="false" src="{% static 'xmas/gifs/bells.gif' %}" alt="">
+            </div>
+            </div>
+            
             <h4 class="visible-head">ACCOUNTING</h4>
             <p>
               Effortlessly manage your finances with the best accounting
@@ -1363,6 +1419,13 @@
       <section>
         <div class="content content-right">
           <div class="content-box-tech">
+
+            <div class="position-relative" style="z-index: 1;">
+              <div class="position-absolute end-0 xmas_bell_top">
+                <img id="xmas_bell" draggable="false" src="{% static 'xmas/gifs/bells.gif' %}" alt="">
+            </div>
+            </div>
+            
             <h4 class="visible-head">3D Modeling</h4>
             <p>
               Bring your products and services to life with captivating 3D
@@ -1389,6 +1452,13 @@
             </div>
           </div>
           <div class="content-box-tech">
+
+            <div class="position-relative" style="z-index: 1;">
+              <div class="position-absolute end-0 xmas_bell_top">
+                <img id="xmas_bell" draggable="false" src="{% static 'xmas/gifs/bells.gif' %}" alt="">
+            </div>
+            </div>
+
             <h4 class="visible-head">VR/AR</h4>
             <p>
               Unleash the Power of Immersive Learning with our Game Design and
@@ -1448,11 +1518,15 @@
           </div>
         </div>
       </section> -->
-
+      <div class="position-relative" style="z-index: 1;">
+        <div class="position-absolute end-0 xmas_star_gif_top">
+          <img id="xmas_star_gif" draggable="false" src="{% static 'xmas/gifs/star.gif' %}" alt="">
+       </div>
+       </div>
       <section id="client-scroll">
         <div class="section-title">
           <!-- <h1>Clients</h1> -->
-          <p>Check our <span style="color: rgb(39, 112, 141)">Clients</span></p>
+          <p>Check our <span style="color: #ff3939">Clients</span></p>
         </div>
         <div class="slider">
           <div class="slide-track-1">
@@ -1856,6 +1930,39 @@
       </div>
     </div>
     <!-- Central Modal Medium Success-->
+
+    <div class="position-relative" style="z-index: 1;">
+      <div class="position-absolute">
+        <div class="d-flex">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+          
+        </div>
+    </div>
+    </div>
 
     <footer id="footer">
       <div class="footer-top">
