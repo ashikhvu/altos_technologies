@@ -72,9 +72,13 @@
 
     }
   </style>
-   <style>
+  <style>
+    .mob{
+      margin-top: -20rem;
+      margin-right: -2rem;
+    }
     .top_tree_effect{
-      margin-top: -0.5rem;
+      margin-top: -1.7rem;
     }
     .top_light_effect{
       margin-top: 4.1rem;
@@ -86,6 +90,93 @@
       .top_light_effect{
         margin-top: 2rem;
       }
+      .card_xmas{
+        margin-top: 3rem;
+      }
+      #img_card_hover{
+        visibility: hidden;
+      }
+    }
+    @media screen and (max-width:250px)
+    {  
+      .tree{
+        width: 5rem;
+      }
+      .mob{
+        margin-top: -20rem;
+        margin-right: -2rem;
+      }
+    }
+    /* xmas card */
+    .card_xmas{
+      background-image: url("{% static '/xmas/cards/card1.png' %}");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: auto;
+      text-shadow: 3px 3px 3px black;
+      border-radius: 10px;
+      transition: all 0.2s linear;
+    }
+    .ts{
+      text-shadow: 1px 1px 1px black;
+    }
+    .ts_md_light{
+      text-shadow: 3px 3px 3px white;
+    }
+    .ts_md_light{
+      text-shadow: 3px 3px 3px black;
+    }
+    #img_card_hover{
+      transition: all 0.2s linear;
+    }
+    #xmas_cap{
+      width: 7rem;
+    }
+    .xmas_cap_top{
+      margin-left: 27.5rem;
+      margin-top: 1.5rem;
+      transform: rotate(10deg);
+    }
+    #user_exp{
+      background-image: url('{% static "xmas/cards/card_bag_1.jpg" %}');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #xmas_santa_gif{
+      transform: rotate(-10deg);
+      width: 15rem;
+      margin-top: -15rem;
+    }
+    .xmas_santa_git_top{
+      transform: rotate(10deg);
+      margin-left: 5rem;
+    }
+    #xmas_bell_top{
+      width: 5rem;
+    }
+    .xmas_silk_gif{
+      margin-top: 3rem;
+      margin-left: 2rem;
+      transform: rotate(-35deg);
+    }
+    .xmas_star_gif_top{
+      margin-top: -4rem;
+      margin-right: 8rem;
+    }
+    #xmas_star_gif{
+      width: 15rem;
+    }
+    #xmas_bell{
+      width: 5rem;
+    }
+    .xmas_bell_top{
+      /* background-image: url("{% static 'xmas/decor/xmas_ball.png' %}"); */
+      margin-top: -1rem;
+      margin-left: 1rem;
+      /* width: 100%;
+      height: 100%; */
+      /* background-repeat: no-repeat;
+      background-size: contain; */
     }
   </style>
 </head>
@@ -100,7 +191,9 @@
   </div>
 
 
-  <div class="position-relative" style="z-index: 998;">
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top green-blue" style="padding-top: 1.5rem;background-color: rgba(0, 0, 0, 0.425);z-index: 2;">
+  <div class="position-relative" style="z-index: 1;">
     <div class="position-absolute start-0 top-0 top_tree_effect">
       <div class="d-flex">
         <img draggable="false" src="{% static 'xmas/decor/decor_top.png' %}" width="500vw" alt="">
@@ -118,9 +211,6 @@
       </div>
     </div>
   </div>
-
-<!-- ======= Header ======= -->
-<header id="header" class="fixed-top green-blue" style="padding-top: 1.5rem;background-color: transparent;">
   <div class="container d-flex align-items-center justify-content-lg-between">
 
     <h1 class="logo me-auto me-lg-0">
@@ -134,7 +224,7 @@
     <!-- Uncomment below if you prefer to use an image logo -->
     <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-    <nav id="navbar" class="navbar order-last order-lg-0">
+    <nav id="navbar" class="navbar order-last order-lg-0" style="z-index: 10;">
       <ul>
         <li><a class="nav-link scrollto hom " href="{% url 'text_page' %}">Home</a></li>
         <li><a class="nav-link scrollto abot" href="{% url 'aboutus' %}">About us</a></li>
@@ -1037,7 +1127,38 @@
 </div>
 <!-- Central Modal Medium Success-->
 
-
+<div class="position-relative" style="z-index: 1;">
+  <div class="position-absolute">
+    <div class="d-flex">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      <img width="150rem" draggable="false" src="{% static 'xmas/decor/white_paint_dripping.png' %}" alt="">
+      
+    </div>
+  </div>
+</div>
 <!-- ======= Footer ======= -->
 <footer id="footer">
   <div class="footer-top">

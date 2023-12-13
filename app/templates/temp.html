@@ -1,6 +1,6 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  {% load static %}
 
   <head>
     <meta charset="utf-8" />
@@ -9,6 +9,7 @@
       href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Best web development company in India | ALTOS Technologies</title>
     <meta
       name="description"
@@ -91,17 +92,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
-
-    <!-- xmas Theme -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <link rel="stylesheet" href="{% static 'css/xmas.css' %}">
-    <script src="{% static 'js/xmas.js' %}"></script>
-
+     <!-- xmas Theme -->
+  <link rel="stylesheet" href="{% static 'css/xmas.css' %}">
+ 
 
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-238910742-1"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -134,138 +133,36 @@
         position: relative;
       }
     </style>
-
-<style>
-  .mob{
-    margin-top: -20rem;
-    margin-right: -2rem;
-  }
-  .top_tree_effect{
-    margin-top: -1.7rem;
-  }
-  .top_light_effect{
-    margin-top: 4.1rem;
-  }
-  @media screen and (max-width:280px){
-    .top_tree_effect{
-      margin-top: -1.5rem;
-    }
-    .top_light_effect{
-      margin-top: 2rem;
-    }
-    .card_xmas{
-      margin-top: 3rem;
-    }
-    #img_card_hover{
-      visibility: hidden;
-    }
-  }
-  @media screen and (max-width:250px)
-  {  
-    .tree{
-      width: 5rem;
-    }
-    .mob{
-      margin-top: -20rem;
-      margin-right: -2rem;
-    }
-  }
-  /* xmas card */
-  .card_xmas{
-    background-image: url("{% static '/xmas/cards/card1.png' %}");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
-    text-shadow: 3px 3px 3px black;
-    border-radius: 10px;
-    transition: all 0.2s linear;
-  }
-  .ts{
-    text-shadow: 1px 1px 1px black;
-  }
-  .ts_md_light{
-    text-shadow: 3px 3px 3px white;
-  }
-  .ts_md_light{
-    text-shadow: 3px 3px 3px black;
-  }
-  #img_card_hover{
-    transition: all 0.2s linear;
-  }
-  #xmas_cap{
-    width: 7rem;
-  }
-  .xmas_cap_top{
-    margin-left: 27.9rem;
-    margin-top: -8.5rem;
-    transform: rotate(10deg);
-  }
-  #user_exp{
-    background-image: url('{% static "xmas/cards/card_bag_1.jpg" %}');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #xmas_santa_gif{
-    transform: rotate(-10deg);
-    width: 15rem;
-    margin-top: -15rem;
-  }
-  .xmas_santa_git_top{
-    transform: rotate(10deg);
-    margin-left: 5rem;
-  }
-  #xmas_bell_top{
-    width: 5rem;
-  }
-  .xmas_silk_gif{
-    margin-top: 3rem;
-    margin-left: 2rem;
-    transform: rotate(-35deg);
-  }
-  .xmas_star_gif_top{
-    margin-top: -4rem;
-    margin-right: 8rem;
-  }
-  #xmas_star_gif{
-    width: 15rem;
-  }
-  #xmas_bell{
-    width: 5rem;
-  }
-  .xmas_bell_top{
-    /* background-image: url("{% static 'xmas/decor/xmas_ball.png' %}"); */
-    margin-top: -1rem;
-    margin-left: 1rem;
-    /* width: 100%;
-    height: 100%; */
-    /* background-repeat: no-repeat;
-    background-size: contain; */
-  }
-</style>
-
+    <style>
+      .top_tree_effect{
+        margin-top: -0.5rem;
+      }
+      .top_light_effect{
+        margin-top: 4.1rem;
+      }
+      @media screen and (max-width:280px){
+        .top_tree_effect{
+          margin-top: -1.5rem;
+        }
+        .top_light_effect{
+          margin-top: 2rem;
+        }
+      }
+    </style>
   </head>
 
   <body>
 
-    <div class="position-relative" style="z-index: 1;">
+    <div class="position-relative" style="z-index: 100000000;">
       <div class="position-absolute" style="width: 100%;height: 100%;">
-        <div class="snow-container"></div>
+        <div class="snow-container" style="opacity: 0.75;"></div>
       </div>
     </div>
-
-
-    <!-- <div class="position-relative" style="z-index: 1;">
-      <div class="position-absolute start-0 top-0 top_light_effect">
-        <ul class="wire">
-          
-        </ul>
-      </div>
-    </div> -->
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top green-blue pb-0" style="padding-top: 1.5rem;background-color: rgba(0, 0, 0, 0.425);">
-      <div class="position-relative" style="z-index: 998;">
+  
+    <div class="position-relative" style="z-index: 100000000;">
       <div class="position-absolute start-0 top-0 top_tree_effect">
         <div class="d-flex">
+          
           <img draggable="false" src="{% static 'xmas/decor/decor_top.png' %}" width="500vw" alt="">
           <img draggable="false" src="{% static 'xmas/decor/decor_top.png' %}" width="500vw" alt="">
           <img draggable="false" src="{% static 'xmas/decor/decor_top.png' %}" width="500vw" alt="">
@@ -280,54 +177,59 @@
           <img draggable="false" src="{% static 'xmas/decor/decor_top.png' %}" width="500vw" alt="">
         </div>
       </div>
-    </div>
-      <div class="container d-flex align-items-center justify-content-lg-between">
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+      <script src="{% static 'js/xmas.js' %}"></script>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top green-blue" style="padding-top: 1.5rem;background-color: transparent;">
+      <div
+        class="container d-flex align-items-center justify-content-lg-between"
+      >
         <h1 class="logo me-auto me-lg-0">
           <a href="{% url 'text_page' %}">
-            <img draggable="false" src="{% static 'img/lg2.gif' %}" class="" alt="Logo Gif" />
+            <img src="{% static 'img/lg2.gif' %}" class="" alt="Logo Gif" />
           </a>
         </h1>
 
-        <nav id="navbar" class="navbar order-last order-lg-0" style="z-index: 2000;">
+        <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
             <li>
-              <a class="nav-link scrollto hom ts" href="{% url 'text_page' %}"
+              <a class="nav-link scrollto hom" href="{% url 'text_page' %}"
                 >Home</a
               >
             </li>
             <li>
-              <a class="nav-link scrollto abot ts" href="{% url 'aboutus' %}"
+              <a class="nav-link scrollto abot" href="{% url 'aboutus' %}"
                 >About us</a
               >
             </li>
             <li>
-              <a class="nav-link scrollto serv ts" href="{% url 'service' %}"
+              <a class="nav-link scrollto serv" href="{% url 'service' %}"
                 >Services</a
               >
             </li>
             <li>
-              <a class="nav-link scrollto cor ts" href="{% url 'core' %}"
+              <a class="nav-link scrollto cor" href="{% url 'core' %}"
                 >Product</a
               >
             </li>
             <li>
-              <a class="nav-link scrollto cors ts" href="{% url 'vacancy' %}"
+              <a class="nav-link scrollto cors" href="{% url 'vacancy' %}"
                 >Career</a
               >
             </li>
 
             <li>
-              <a class="nav-link scrollto event ts" href="{% url 'events' %}"
+              <a class="nav-link scrollto event" href="{% url 'events' %}"
                 >Events</a
               >
             </li>
             <li>
-              <a class="nav-link scrollto cont ts" href="{% url 'contact' %}"
+              <a class="nav-link scrollto cont" href="{% url 'contact' %}"
                 >Contact</a
               >
             </li>
           </ul>
-          <i class="bi bi-list mobile-nav-toggle" style="z-index: 2000;"></i>
+          <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
         <!-- .navbar -->
       </div>
@@ -391,7 +293,7 @@
       }
 
       .content {
-        width: 100%;
+        width: 80%;
       }
       .content-left {
         display: grid;
@@ -563,10 +465,10 @@
         width: 100%;
         height: 2.5rem;
         background: linear-gradient(
-          45deg,
-          #840000,
-          rgb(187, 0, 0),
-          #5c0404 100%
+          102.57deg,
+          #dc0916,
+          #f41fd6 100%,
+          #f41fd6 0
         );
         border-radius: 1.625rem;
         transition: all 0.4s ease-in-out;
@@ -1109,50 +1011,35 @@
     </style>
 
     <div class="container-fluid" id="container_text">
-      <div class="">
-        <section id="readmore1" style="z-index: 3;">
-          <div class="content card_xmas p-2 rounded">
-            <div class="position-relative" style="z-index: 1;">
-              <div class="position-absolute xmas_silk_gif">
-                <img width="150rem" draggable="false" src="{% static 'xmas/gifs/xmas-silk.gif' %}" alt="">
-            </div>
-            </div>
-            <h1 class="main-head text-light text-center pt-5" style="color: rgb(22, 125, 165)"><b>ALTOS Technologies</b></h3>
-            <h3 class="mt-3 sub-head text-danger text-center">
-              We Deal With The Aspects Of
-              <span class="text-light" style="color: rgb(22, 125, 165)"
-                >Professional IT Solutions</span
-              >
-            </h3>
-            <p class="fst-normal mt-2 text-light">
-              Elevate your business with Altos Technologies. As a software
-              development company in India, we craft custom websites and software
-              solutions to fit your unique business needs. Our team of experts
-              delivers solutions that streamline operations, boost efficiency, and
-              create a lasting impact. Partner with us to take your success to new
-              heights with quality and excellence at the forefront.
-            </p>
-            <div class="request-box">
-              <a class="req-btn" href="{% url 'aboutus' %}">
-                <span class="circle">
-                  <span class="icon arrow"></span>
-                </span>
-                <span class="text-conte">Read More</span>
-              </a>
-            </div>
-          </div>
-        </section>
-       </div>
+      <section id="readmore1">
+        <div class="content pt-2">
+          <h1 class="mb-4 head-main" style="color: rgb(22, 125, 165)"><b>ALTOS TECHNOLOGIES</b></h1>
+          <h3 class="mb-4 head-sub">
+            We Deal With The Aspects Of
+            <span style="color: rgb(22, 125, 165)"
+              >Professional IT Solutions</span
+            >
+          </h3>
+          <p class="fst-normal">
+            Elevate your business with Altos Technologies. As a software
+            development company in India, we craft custom websites and software
+            solutions to fit your unique business needs.
+          </p>
+          <!-- <div class="request-box">
+            <a class="req-btn" target="_blank" href="https://altostechnologies.in/aboutus">
+              <span class="circle">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="text-conte">Read More</span>
+            </a>
+          </div> -->
+        </div>
+      </section>
 
       <section id="why-choose-us" class="">
-        <div class="position-relative" style="z-index: 1;">
-          <div class="position-absolute xmas_cap_top">
-            <img id="xmas_cap" draggable="false" src="{% static 'xmas/decor/cap.png' %}" alt="">
-         </div>
-         </div>
         <div class="row container">
           <div class="col-12">
-            <h4 class="section-head pt-5" style="color: rgb(243, 243, 243)">//Why Choose Us</h4>
+            <h4 class="section-head" style="color: rgb(243, 243, 243)">//Why Choose Us</h4>
             <!-- <h3 style="color: #ffff">
               Some Of The Reason For Choosing
               <span style="color: #0fa49b">Our IT Solutions</span>
@@ -1169,16 +1056,8 @@
           <div class="row">
             <div class="col-lg-3">
               <div class="icon-box mt-5 mt-5 mt-lg-0">
-
                 <div class="icon-box-content">
-                  
-                  <div class="position-relative" style="z-index: 1;">
-                    <div class="position-absolute" style="margin-top: -4rem;margin-left: -2.5rem;">
-                      <img width="145rem" draggable="false" src="{% static 'xmas/decor/snow_man1.png' %}" alt="">
-                   </div>
-                   </div>
-                  
-                   <i class="bx bx-receipt" style="color: #0fa49b"></i>
+                  <i class="bx bx-receipt" style="color: #0fa49b"></i>
                 </div>
 
                 <div class="other-content">
@@ -1196,13 +1075,6 @@
               <div class="icon-box">
                 <div class="icon-box-content">
                   <!-- <i class="bx bx-shield" style="color: #0fa49b"></i> -->
-                 
-                  <div class="position-relative" style="z-index: 1;">
-                    <div class="position-absolute" style="margin-top: -4rem;margin-left: -2rem;">
-                      <img width="100rem" draggable="false" src="{% static 'xmas/decor/xmas_elf_no_bg.png' %}" alt="">
-                   </div>
-                   </div>
-
                   <ion-icon
                     name="layers-outline"
                     style="color: #0fa49b"
@@ -1222,13 +1094,6 @@
             <div class="col-lg-3">
               <div class="icon-box mt-5 mt-lg-0">
                 <div class="icon-box-content">
-
-                  <div class="position-relative" style="z-index: 1;">
-                    <div class="position-absolute" style="margin-top: -4rem;margin-left: -2rem;">
-                      <img width="100rem" draggable="false" src="{% static 'xmas/decor/xams_deer2.png' %}" alt="">
-                   </div>
-                   </div>
-                   
                   <i class="bx bx-cube-alt" style="color: #0fa49b"></i>
                 </div>
 
@@ -1246,13 +1111,6 @@
             <div class="col-lg-3">
               <div class="icon-box mt-5 mt-lg-0">
                 <div class="icon-box-content">
-
-                  <div class="position-relative" style="z-index: 1;">
-                    <div class="position-absolute" style="margin-top: -2.5rem;margin-left: -2rem;">
-                      <img width="100rem" draggable="false" src="{% static 'xmas/decor/present.png' %}" alt="">
-                   </div>
-                   </div>
-                   
                   <!-- <i class="bx bx-cube-alt" style="color: #0fa49b"></i> -->
                   <ion-icon name="people-outline" style="color: #0fa49b">
                   </ion-icon>
@@ -1544,7 +1402,7 @@
       </section>
 
       <section>
-        <div class="content content-right" style="width: 80%;">
+        <div class="content content-right">
           <div class="content-box-tech">
             <h4 class="visible-head">ERP</h4>
             <p>
@@ -1600,7 +1458,7 @@
       </section>
 
       <section>
-        <div class="content content-left" style="width: 80%;">
+        <div class="content content-left">
           <div class="img-box-tech">
             <h4 class="hide-head">HRMS</h4>
             <img src="static/img/team/hrms.png" alt="HRMS" />
@@ -1633,7 +1491,7 @@
       </section>
 
       <section>
-        <div class="content content-right" style="width: 80%;">
+        <div class="content content-right">
           <div class="content-box-tech">
             <h4 class="">CRM</h4>
             <!-- <h4 class="visible-head">CRM</h4> -->
@@ -1691,7 +1549,7 @@
         </div> -->
       </section>
       <section>
-        <div class="content content-right" style="width: 80%;">
+        <div class="content content-right">
           <div class="content-box-tech">
             <h4 class="visible-head">3D Modeling</h4>
             <p>
@@ -1749,7 +1607,7 @@
       </section>
 
       <section>
-        <div class="content content-left" style="width: 80%;">
+        <div class="content content-left">
           <div class="img-box-tech">
             <h4 class="hide-head">VR/AR</h4>
             <img src="static/img/team/arvr.jpg" alt="VR/AR" />
@@ -2305,5 +2163,5 @@
         picker.togglePicker(button);
       });
     </script>
-    </body>
+  </body>
 </html>
