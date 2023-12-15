@@ -244,6 +244,11 @@
     /* background-repeat: no-repeat;
     background-size: contain; */
   }
+  @media screen and (max-width:280px) {
+    .img-box-tech img{
+      width: 70%;
+    }
+  }
 </style>
 
   </head>
@@ -256,14 +261,6 @@
       </div>
     </div>
 
-
-    <!-- <div class="position-relative" style="z-index: 1;">
-      <div class="position-absolute start-0 top-0 top_light_effect">
-        <ul class="wire">
-          
-        </ul>
-      </div>
-    </div> -->
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top green-blue pb-0" style="padding-top: 1.5rem;background-color: rgba(0, 0, 0, 0.425);">
       <div class="position-relative" style="z-index: 998;">
@@ -440,7 +437,7 @@
         display: none;
       }
       .img-box-tech img {
-        width: 100%;
+        width: 90%;
         height: 100%;
         border-radius: 10%;
       }
@@ -1143,6 +1140,95 @@
   .xmas_peek2_top{
     margin-right: -14rem;
   }
+
+  #xmas_cap1{
+      width: 7rem;
+    }
+    .xmas_cap_top1{
+      margin-left: 27rem;
+      margin-top: -1rem;
+    }
+  @media screen and (max-width:280px) {
+        #xmas_cap1{
+          width: 5rem;
+        }
+        .xmas_cap_top1{
+          margin-left: 2.6rem;
+          margin-top: 0.5rem;
+        }
+        #xmas_santa_gif{
+          width: 7rem;
+        }
+        .xmas_santa_gif_top{
+          margin-left: 3.5rem;
+        }
+      }
+      @media screen and (min-width:281px) and (max-width:360px) {
+        #xmas_cap1{
+          width: 3rem;
+        }
+        .xmas_cap_top1{
+          margin-left: 2.5rem;
+          margin-top: 1.5rem;
+        }
+        #xmas_santa_gif{
+          width: 7rem;
+        }
+        .xmas_santa_gif_top{
+          margin-left: 5.5rem;
+        }
+      }
+      @media screen and (min-width:361px) and (max-width:375px) {
+        #xmas_cap1{
+          width: 3rem;
+        }
+        .xmas_cap_top1{
+          margin-left: 3rem;
+          margin-top: 1.5rem;
+        }
+        #xmas_santa_gif{
+          width: 7rem;
+        }
+        .xmas_santa_gif_top{
+          margin-left: 5.7rem;
+        }
+      }
+      @media screen and (min-width:376px) and (max-width:389px) {
+        #xmas_cap1{
+          width: 3rem;
+        }
+        .xmas_cap_top1{
+          margin-left: 4.2rem;
+          margin-top: 1.5rem;
+        }
+      }
+      @media screen and (min-width:390px) and (max-width:414px) {
+        #xmas_cap1{
+          width: 3rem;
+        }
+        .xmas_cap_top1{
+          margin-left: 3.8rem;
+          margin-top: 1.5rem;
+        }
+      }
+      @media screen and (min-width:415px) and (max-width:540px) {
+        #xmas_cap1{
+          width: 3rem;
+        }
+        .xmas_cap_top1{
+          margin-left: 8rem;
+          margin-top: 1.5rem;
+        }
+      }
+      @media screen and (min-width:541px) and (max-width:767px) {
+        #xmas_cap1{
+          width: 3.5rem;
+        }
+        .xmas_cap_top1{
+          margin-left: 8.5rem;
+          margin-top: 1.5rem;
+        }
+      }
 </style>
 
     <div class="container-fluid" id="container_text">
@@ -1182,13 +1268,13 @@
        </div>
 
       <section id="why-choose-us" class="">
-        <div class="position-relative" style="z-index: 1;">
-          <div class="position-absolute xmas_cap_top">
-            <img id="xmas_cap" draggable="false" src="{% static 'xmas/decor/cap.png' %}" alt="">
-         </div>
-         </div>
         <div class="row container">
           <div class="col-12">
+            <div class="position-relative" style="z-index: 1;">
+              <div class="position-absolute xmas_cap_top1">
+                <img id="xmas_cap1" draggable="false" src="{% static 'xmas/decor/cap.png' %}" alt="">
+             </div>
+             </div>
             <h4 class="section-head pt-5" style="color: rgb(243, 243, 243)">//Why Choose Us</h4>
             <!-- <h3 style="color: #ffff">
               Some Of The Reason For Choosing
@@ -1215,7 +1301,7 @@
                    </div>
                    </div>
                   
-                   <i class="bx bx-receipt" style="color: #0fa49b"></i>
+                   <i style="visibility: hidden;" class="bx bx-receipt" style="color: #0fa49b"></i>
                 </div>
 
                 <div class="other-content">
@@ -1240,7 +1326,7 @@
                    </div>
                    </div>
 
-                  <ion-icon
+                  <ion-icon style="visibility: hidden;"
                     name="layers-outline"
                     style="color: #0fa49b"
                   ></ion-icon>
@@ -1266,7 +1352,7 @@
                    </div>
                    </div>
                    
-                  <i class="bx bx-cube-alt" style="color: #0fa49b"></i>
+                  <i style="visibility: hidden;" class="bx bx-cube-alt" style="color: #0fa49b"></i>
                 </div>
 
                 <div class="other-content">
@@ -1291,7 +1377,7 @@
                    </div>
                    
                   <!-- <i class="bx bx-cube-alt" style="color: #0fa49b"></i> -->
-                  <ion-icon name="people-outline" style="color: #0fa49b">
+                  <ion-icon style="visibility: hidden;" name="people-outline" style="color: #0fa49b">
                   </ion-icon>
                 </div>
 
@@ -1447,11 +1533,11 @@
               </div>
               </div>
   
-              <div class="position-relative" style="z-index: 1;">
+              <!-- <div class="position-relative" style="z-index: 1;">
                 <div class="position-absolute red_bottom_top">
                   <img id="red_bottom" draggable="false" src="{% static 'xmas/decor/new ribbons/yellow_ribbon_bottom.png' %}" alt="">
               </div>
-              </div>
+              </div> -->
 
              <div>
               <div class="card-header">
@@ -1488,11 +1574,11 @@
               </div>
               </div>
   
-              <div class="position-relative" style="z-index: 1;">
+              <!-- <div class="position-relative" style="z-index: 1;">
                 <div class="position-absolute red_bottom_top">
                   <img id="red_bottom" draggable="false" src="{% static 'xmas/decor/new ribbons/red_ribbon_bottom.png' %}" alt="">
               </div>
-              </div>
+              </div> -->
 
              <div>
               <div class="card-header">
@@ -1523,15 +1609,15 @@
 
               <div class="position-relative" style="z-index: 1;">
                 <div class="position-absolute red_top_top">
-                  <img id="red_top" draggable="false" src="{% static 'xmas/decor/new ribbons/blue_ribbon_top.png' %}" alt="">
+                  <img id="red_top" draggable="false" src="{% static 'xmas/decor/new ribbons/violet_ribbon_top.png' %}" alt="">
               </div>
               </div>
   
-              <div class="position-relative" style="z-index: 1;">
+              <!-- <div class="position-relative" style="z-index: 1;">
                 <div class="position-absolute red_bottom_top">
                   <img id="red_bottom" draggable="false" src="{% static 'xmas/decor/new ribbons/blue_ribbon_bottom.png' %}" alt="">
               </div>
-              </div>
+              </div> -->
 
              <div>
               <div class="card-header">
@@ -1566,11 +1652,11 @@
               </div>
               </div>
   
-              <div class="position-relative" style="z-index: 1;">
+              <!-- <div class="position-relative" style="z-index: 1;">
                 <div class="position-absolute red_bottom_top">
                   <img id="red_bottom" draggable="false" src="{% static 'xmas/decor/new ribbons/green_ribbon_bottom.png' %}" alt="">
               </div>
-              </div>
+              </div> -->
 
               <div>
                 <div class="card-header">
@@ -1602,6 +1688,13 @@
       </section>
 
 
+      <div class="position-relative" style="z-index: 1;">
+        <div class="position-absolute start-0 top-0 top_light_effect" style="margin-top: -2rem;">
+          <ul class="wire">
+            
+          </ul>
+        </div>
+      </div>
             <!-- <section id="aboutus-section" class="pb-0">
         <div class="container section-title d-flex justify-content-start px-4 py-2">
           <div class="contact-head">
@@ -1696,6 +1789,11 @@
           </div> -->
           <div class="img-box-tech">
             <h4 class="hide-head">ERP</h4>
+            <div class="position-relative" style="z-index: 1;">
+              <div class="position-absolute" style="margin-top: -8rem;">
+                <img draggable="false" src="{% static 'xmas/decor/lights/light2_full.png' %}" alt="">
+            </div>
+            </div>
             <img src="static/img/team/erp.png" alt="ERP" />
           </div>
         </div>
@@ -1705,6 +1803,11 @@
         <div class="content content-left" style="width: 80%;">
           <div class="img-box-tech">
             <h4 class="hide-head">HRMS</h4>
+            <div class="position-relative" style="z-index: 1;">
+              <div class="position-absolute" style="margin-top: -8rem;">
+                <img draggable="false" src="{% static 'xmas/decor/lights/light2_full.png' %}" alt="">
+            </div>
+            </div>
             <img src="static/img/team/hrms.png" alt="HRMS" />
           </div>
           <div class="content-box-tech">
@@ -1845,6 +1948,11 @@
           </div> -->
           <div class="img-box-tech">
             <h4 class="hide-head">3D Modeling</h4>
+            <div class="position-relative" style="z-index: 1;">
+              <div class="position-absolute" style="margin-top: -8rem;">
+                <img draggable="false" src="{% static 'xmas/decor/lights/light2_full.png' %}" alt="">
+            </div>
+            </div>
             <img src="static/img/portfolio/3d.png" alt="3D Modeling" />
           </div>
         </div>
@@ -1854,6 +1962,11 @@
         <div class="content content-left" style="width: 80%;">
           <div class="img-box-tech">
             <h4 class="hide-head">VR/AR</h4>
+            <div class="position-relative" style="z-index: 1;">
+              <div class="position-absolute" style="margin-top: -8rem;">
+                <img draggable="false" src="{% static 'xmas/decor/lights/light2_full.png' %}" alt="">
+            </div>
+            </div>
             <img src="static/img/team/arvr.jpg" alt="VR/AR" />
           </div>
           <div class="content-box-tech">
@@ -2426,6 +2539,23 @@
       button.addEventListener('click', () => {
         picker.togglePicker(button);
       });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+    $(window).on('resize load', function () {
+        ww = $(window).width()
+        // alert(ww)
+        // light_numbber = 0.03197674418 * ww
+        light_numbber = 0.0288 * ww
+        light_num = parseInt(light_numbber)
+        // alert(light_num)
+        $('.wire').empty()
+        for (var i = 0; i < light_num; i++) {
+            $('.wire').append('<li></li>')
+        }
+    })
+})
     </script>
     </body>
 </html>

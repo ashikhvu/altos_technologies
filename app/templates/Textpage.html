@@ -831,7 +831,7 @@
       .swiper-pagination-bullet-active {
         background-color: #4070f4;
       }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .slide p {
           padding: 0 20px;
         }
@@ -870,6 +870,21 @@
         #img_card_hover{
           visibility: hidden;
         }
+
+        #xmas_cap{
+          width: 2rem;
+        }
+        .xmas_cap_top{
+          margin-top: 15px;
+          margin-left: 10px;
+        }
+        #xmas_santa_gif{
+          width: 7rem;
+        }
+        .xmas_santa_gif_top{
+          margin-top: -1rem;
+          margin-left: 3.5rem;
+        }
       }
       @media screen and (max-width:250px)
       {  
@@ -900,7 +915,7 @@
       .ts_md_light{
         text-shadow: 3px 3px 3px black;
       }
-      #img_card_hover{
+      .img_card_hover{
         transition: all 0.2s linear;
       }
       #xmas_cap{
@@ -910,6 +925,47 @@
         margin-left: 27.5rem;
         margin-top: 1.5rem;
         transform: rotate(10deg);
+      }
+      #xmaspap_peek{
+        width: 6.5rem;
+      }
+      .xmaspap_peek_top{
+        margin-top: -5rem;
+        margin-left: -0.6rem;
+      }
+      #xmas_elf{
+        width: 6.5rem;
+      }
+      .xmas_elf_top{
+        margin-top: -5rem;
+        margin-left: -6rem;
+      }
+      #xmas_deer{
+        width: 6rem;
+      }
+      .xmas_deer_top{
+        margin-top: -4.5rem;
+        margin-left: -6.5rem;
+      }
+      #xmas_bisket{
+        width: 4rem;
+      }
+      .xmas_bisket_top{
+        margin-top: -4.5rem;
+        margin-left: -5rem;
+      }
+      #snowmanpeek{
+        width: 5rem;
+      }
+      .snowmanpeek_top{
+        margin-top: -5rem;margin-left: -6rem;
+      }
+      #xmasgift{
+        width: 6.3rem;
+      }
+      .xmasgift_top{
+        margin-top: -4rem;
+        margin-left: -6.2rem;
       }
       #user_exp{
         background-image: url('{% static "xmas/cards/card_bag_1.jpg" %}');
@@ -921,7 +977,7 @@
         width: 15rem;
         margin-top: -15rem;
       }
-      .xmas_santa_git_top{
+      .xmas_santa_gif_top{
         transform: rotate(10deg);
         margin-left: 5rem;
       }
@@ -955,11 +1011,331 @@
         /* background-repeat: no-repeat;
         background-size: contain; */
       }
+      @media screen and (min-width:280px) and (max-width:600px)
+      {
+        .mob_center{
+          text-align: center;
+        }
+        #xmas_silk_gif{
+          width: 5rem;
+        }
+        .xmas_silk_gif{
+          margin-top: 1.5rem;
+          margin-left: 0.5rem;
+          transform: rotate(-35deg);
+        }
+        .card_top_margin{
+          margin-top: 4rem;
+        }
+        #img_card_tree{
+          width: 7rem;
+        }
+        .img_card_tree_top{
+          margin-top: -130px;
+          margin-right: -10px;
+        }
+        #xmas_cap{
+          width: 50px;
+        }
+        .xmas_cap_top{
+          margin-top: 20px;
+          margin-left: 40px;
+        }
+        #xmaspap_peek{
+          width: 5rem;
+        }
+        .xmaspap_peek_top{
+          margin-top: -4rem;
+          margin-left: -35px;
+        }
+        #xmas_elf{
+          width: 5rem;
+        }
+        .xmas_elf_top{
+          margin-top: -6.5rem;
+          margin-left: -45px;
+        }
+        #xmas_deer{
+          width: 4.5rem;
+        }
+        .xmas_deer_top{
+          margin-top: -5.5rem;
+          margin-left: -45px;
+        }
+        #xmas_bisket{
+          width: 3.1rem;
+        }
+        .xmas_bisket_top{
+          margin-top: -5.8rem;
+          margin-left: -40px;
+        }
+        #snowmanpeek{
+          width: 4rem;
+        }
+        .snowmanpeek_top{
+          margin-top: -6rem;
+          margin-left: -3rem;
+        }
+        #xmasgift{
+          width: 4.5rem;
+        }
+        .xmasgift_top{
+          margin-top: -4.5rem;
+          margin-left: -2.5rem;
+        }
+        #xmas_santa_gif{
+          width: 7rem;
+        }
+        .xmas_santa_gif_top{
+          margin-left: 4rem;
+        }
+        .xmas_bell_top{
+          margin-top: -3rem;
+          margin-left: 4rem;
+        }
+      }
+      @media screen and (max-width:360px){
+        .xmas_santa_gif_top{
+          margin-left: 6rem;
+        }
+      }
+      @media screen and (max-width:375px){
+        .xmas_santa_gif_top{
+          margin-left: 4rem;
+        }
+      }
+      @media screen and (max-width:414px){
+        .xmas_santa_gif_top{
+          margin-left: 8rem;
+        }
+      }
+      @media screen and (min-width:540px) and (max-width:768px){
+        .xmas_cap_top{
+          margin-left: 8rem;
+        }
+        #img_card_tree{
+          width: 10rem;
+        }
+        .img_card_tree_top{
+          margin-top: -230px;
+          margin-right: -10px;
+        }
+        #xmas_santa_gif{
+          width: 7rem;
+        }
+        .xmas_santa_gif_top{
+          margin-left: 12rem;
+          margin-top: -1.7rem;
+        }
+      }
+      /* @media screen and (max-width:768px){
+        #xmas_silk_gif{
+          width: 5rem;
+        }
+        .xmas_silk_gif{
+          margin-top: 1.5rem;
+          margin-left: 0.5rem;
+          transform: rotate(-35deg);
+        }
+        #img_card_tree{
+          width: 10rem;
+        }
+      } */
+      #xmas_cap1{
+        width: 7rem;
+      }
+      .xmas_cap_top1{
+        margin-left: 27rem;
+        margin-top: 2rem;
+      }
+      @media screen and (max-width:280px) {
+        #xmas_cap1{
+          width: 3rem;
+        }
+        .xmas_cap_top1{
+          margin-left: 0.5rem;
+          margin-top: 1rem;
+        }
+        #xmas_santa_gif{
+          width: 7rem;
+        }
+        .xmas_santa_gif_top{
+          margin-left: 3.5rem;
+        }
+      }
+      @media screen and (min-width:281px) and (max-width:360px) {
+        #xmas_cap1{
+          width: 3rem;
+        }
+        .xmas_cap_top1{
+          margin-left: 2.5rem;
+          margin-top: 1.5rem;
+        }
+        #xmas_santa_gif{
+          width: 7rem;
+        }
+        .xmas_santa_gif_top{
+          margin-left: 5.5rem;
+        }
+      }
+      @media screen and (min-width:361px) and (max-width:375px) {
+        #xmas_cap1{
+          width: 3rem;
+        }
+        .xmas_cap_top1{
+          margin-left: 3rem;
+          margin-top: 1.5rem;
+        }
+        #xmas_santa_gif{
+          width: 7rem;
+        }
+        .xmas_santa_gif_top{
+          margin-left: 5.7rem;
+        }
+      }
+      @media screen and (min-width:376px) and (max-width:389px) {
+        #xmas_cap1{
+          width: 3rem;
+        }
+        .xmas_cap_top1{
+          margin-left: 4.2rem;
+          margin-top: 1.5rem;
+        }
+      }
+      @media screen and (min-width:390px) and (max-width:414px) {
+        #xmas_cap1{
+          width: 3rem;
+        }
+        .xmas_cap_top1{
+          margin-left: 3.8rem;
+          margin-top: 1.5rem;
+        }
+      }
+      @media screen and (min-width:415px) and (max-width:540px) {
+        #xmas_cap1{
+          width: 3rem;
+        }
+        .xmas_cap_top1{
+          margin-left: 8rem;
+          margin-top: 1.5rem;
+        }
+      }
+      @media screen and (min-width:541px) and (max-width:767px) {
+        #xmas_cap1{
+          width: 3.5rem;
+        }
+        .xmas_cap_top1{
+          margin-left: 8.5rem;
+          margin-top: 1.5rem;
+        }
+      }
+      @media screen and (min-width:768px) and (max-width:912px) {
+        #xmas_cap1{
+          width: 5.6rem;
+        }
+        .xmas_cap_top1{
+          margin-left: 9rem;
+          margin-top: 3rem;
+        }
+        #xmas_silk_gif{
+          width: 5rem;
+        }
+        .xmas_silk_gif{
+          margin-top: 1.5rem;
+          margin-left: 0.5rem;
+          transform: rotate(-35deg);
+        }
+        #img_card_tree{
+          width: 20rem;
+        }
+        .img_card_tree_top{
+          margin-top: -20rem;
+          margin-right: -10px;
+        }
+
+        #xmaspap_peek{
+          width: 5rem;
+        }
+        .xmaspap_peek_top{
+          margin-top: -4rem;
+          margin-left: -35px;
+        }
+        #xmas_elf{
+          width: 5rem;
+        }
+        .xmas_elf_top{
+          margin-top: -6.5rem;
+          margin-left: -45px;
+        }
+        #xmas_deer{
+          width: 4.5rem;
+        }
+        .xmas_deer_top{
+          margin-top: -5.5rem;
+          margin-left: -45px;
+        }
+        #xmas_bisket{
+          width: 3.1rem;
+        }
+        .xmas_bisket_top{
+          margin-top: -5.8rem;
+          margin-left: -40px;
+        }
+        #snowmanpeek{
+          width: 4rem;
+        }
+        .snowmanpeek_top{
+          margin-top: -6rem;
+          margin-left: -3rem;
+        }
+        #xmasgift{
+          width: 4.5rem;
+        }
+        .xmasgift_top{
+          margin-top: -4.5rem;
+          margin-left: -2.5rem;
+        }
+        #xmas_santa_gif{
+          width: 7rem;
+        }
+        .xmas_santa_gif_top{
+          margin-left: 20rem;
+        }
+        .xmas_bell_top{
+          margin-top: -3rem;
+          margin-left: 4rem;
+        }
+      }
+      @media screen and (min-width:913px) and (max-width:1024px) {
+        #xmas_cap1{
+          width: 7rem;
+        }
+        .xmas_cap_top1{
+          margin-left: 15.5rem;
+          margin-top: 1.8rem;
+        }
+        #img_card_tree{
+          width: 20rem;
+        }
+        .img_card_tree_top{
+          margin-top: -12rem;
+          margin-right: -10px;
+        }
+      }
+      @media screen and (min-width:1025px) and (max-width:1280px) {
+        #xmas_cap1{
+          width: 7rem;
+        }
+        .xmas_cap_top1{
+          margin-left: 21.5rem;
+          margin-top: 1.8rem;
+        }
+      }
     </style>
 
     <div class="container-fluid" id="container_text">
      <div class="">
-      <section id="readmore1" style="z-index: 3;">
+      <section id="readmore1" style="z-index: 3;" class="card_top_margin">
         <div class="content card_xmas p-2 rounded">
           <div class="position-relative" style="z-index: 1;">
             <div class="position-absolute xmas_silk_gif">
@@ -998,8 +1374,8 @@
      </div>
      </div>
      <div class="position-relative" style="z-index: 1;">
-      <div class="position-absolute end-0 mob">
-        <img id="img_card_hover" draggable="false" src="{% static 'xmas/tree/tree_edited.png' %}" alt="">
+      <div class="position-absolute end-0 mob img_card_tree_top">
+        <img id="img_card_tree" class="img_card_hover" draggable="false" src="{% static 'xmas/tree/tree_edited.png' %}" alt="">
      </div>
      </div>
 
@@ -1007,8 +1383,8 @@
         <div class="row container">
           <div class="col-12">
             <div class="position-relative" style="z-index: 1;">
-              <div class="position-absolute xmas_cap_top">
-                <img id="xmas_cap" draggable="false" src="{% static 'xmas/decor/cap.png' %}" alt="">
+              <div class="position-absolute xmas_cap_top1">
+                <img id="xmas_cap1" draggable="false" src="{% static 'xmas/decor/cap.png' %}" alt="">
              </div>
              </div>
             <h4 style="color: rgb(243, 243, 243)">//Why Choose Us</h4>
@@ -1030,8 +1406,8 @@
             <div class="col-lg-4">
               <div class="icon-box mt-5 mt-5 mt-lg-0">
                 <div class="position-relative" style="z-index: 1;">
-                  <div class="position-absolute" style="margin-top: -5rem;margin-left: -0.6rem;">
-                    <img width="100rem" draggable="false" src="{% static 'xmas/decor/xmaspap_peek.png' %}" alt="">
+                  <div class="position-absolute xmaspap_peek_top">
+                    <img id="xmaspap_peek" draggable="false" src="{% static 'xmas/decor/xmaspap_peek.png' %}" alt="">
                  </div>
                  </div>
                 <div class="icon-box-content" style="visibility: hidden;">
@@ -1039,7 +1415,7 @@
                 </div>
 
                 <div id="user_exp" class="other-content">
-                  <h5>User Experience</h5>
+                  <h5 class="mob_center">User Experience</h5>
                   <p>
                     Our Team of Experienced Professionals is Committed to
                     Delivering Dependable Services to Meet the Needs of Our
@@ -1054,8 +1430,8 @@
                   <i class="bx bx-support" style="color: #0fa49b"></i>
                 </div>
                 <div class="position-relative" style="z-index: 1;">
-                  <div class="position-absolute" style="margin-top: -5rem;margin-left: -6rem;">
-                    <img width="100rem" draggable="false" src="{% static 'xmas/decor/xmas_elf_no_bg.png' %}" alt="">
+                  <div class="position-absolute xmas_elf_top">
+                    <img id="xmas_elf" draggable="false" src="{% static 'xmas/decor/xmas_elf_no_bg.png' %}" alt="">
                  </div>
                  </div>
                 <div class="other-content">
@@ -1075,8 +1451,8 @@
                   <i class="bx bx-shield" style="color: #0fa49b"></i>
                 </div>
                 <div class="position-relative" style="z-index: 1;">
-                  <div class="position-absolute" style="margin-top: -5rem;margin-left: -6.5rem;">
-                    <img width="100rem" draggable="false" src="{% static 'xmas/decor/xams_deer2.png' %}" alt="">
+                  <div class="position-absolute xmas_deer_top">
+                    <img id="xmas_deer" draggable="false" src="{% static 'xmas/decor/xams_deer2.png' %}" alt="">
                  </div>
                  </div>
                 <div class="other-content">
@@ -1094,8 +1470,8 @@
                   <i class="bx bx-cube-alt" style="color: #0fa49b"></i>
                 </div>
                 <div class="position-relative" style="z-index: 1;">
-                  <div class="position-absolute" style="margin-top: -4.5rem;margin-left: -5rem;">
-                    <img width="60rem" draggable="false" src="{% static 'xmas/decor/xmas_biscuit.png' %}" alt="">
+                  <div class="position-absolute xmas_bisket_top">
+                    <img id="xmas_bisket" draggable="false" src="{% static 'xmas/decor/xmas_biscuit.png' %}" alt="">
                  </div>
                  </div>
                 <div class="other-content">
@@ -1119,8 +1495,8 @@
                   ></ion-icon>
                 </div>
                 <div class="position-relative" style="z-index: 1;">
-                  <div class="position-absolute" style="margin-top: -5rem;margin-left: -6rem;">
-                    <img width="80rem" draggable="false" src="{% static 'xmas/decor/xams_snoman_peek_no_bg_mirror.png' %}" alt="">
+                  <div class="position-absolute snowmanpeek_top">
+                    <img id="snowmanpeek" draggable="false" src="{% static 'xmas/decor/xams_snoman_peek_no_bg_mirror.png' %}" alt="">
                  </div>
                  </div>
                 <div class="other-content">
@@ -1140,8 +1516,8 @@
                   </ion-icon>
                 </div>
                 <div class="position-relative" style="z-index: 1;">
-                  <div class="position-absolute" style="margin-top: -4rem;margin-left: -6.2rem;">
-                    <img width="100rem" draggable="false" src="{% static 'xmas/decor/present.png' %}" alt="">
+                  <div class="position-absolute xmasgift_top">
+                    <img id="xmasgift" draggable="false" src="{% static 'xmas/decor/present.png' %}" alt="">
                  </div>
                  </div>
                 <div class="other-content">
@@ -1210,7 +1586,7 @@
         </div>
       </section> -->
       <div class="position-relative" style="z-index: 1;">
-        <div class="position-absolute xmas_santa_git_top">
+        <div class="position-absolute xmas_santa_gif_top">
           <img id="xmas_santa_gif" draggable="false" src="{% static 'xmas/gifs/xmas_santa.gif' %}" alt="">
        </div>
        </div>
@@ -2185,10 +2561,10 @@
     })
     $(document).ready(function(){
       $('.card_xmas').on('mouseenter',function(){
-        $('#img_card_hover').css({'opacity':0.5})
+        $('.img_card_hover').css({'opacity':0.5})
       })
       $('.card_xmas').on('mouseleave',function(){
-        $('#img_card_hover').css({'opacity':1})
+        $('.img_card_hover').css({'opacity':1})
       })
     })
     </script>
