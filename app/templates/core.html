@@ -566,6 +566,42 @@ h5 {
     color: white;
     text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.797);
   }
+  .background_img{
+    background-image: url('{% static "xmas/bg/card_bg1.png" %}');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .background_img1{
+    /* background-image: radial-gradient(white,rgba(255, 255, 255, 0.531),rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.245)); */
+  }
+  #santa_peek11{
+    width: 10rem;
+  }
+  .santa_peek11_top{
+    margin-left: -6.5rem;
+    margin-top: 6rem;
+  }
+  #santa_peek22{
+    width: 10rem;
+  }
+  .santa_peek22_top{
+    margin-right: -6.5rem;
+    margin-top: 7.5rem;
+  }
+  #snowman_peek11{
+    width: 7rem;
+  }
+  .snowman_peek11_top{
+    margin-left: -8rem;
+    margin-top: 5rem;
+  }
+  #snowman_peek22{
+    width: 7rem;
+  }
+  .snowman_peek22_top{
+    margin-right: -8rem;
+    margin-top: 5rem;
+  }
 </style>
 <body>
   
@@ -631,15 +667,22 @@ h5 {
   <section class="pb-0">
     <div class="container mt-3">
       <div class="row  g-3 content-boxs-parent border-0 rounded-4">
+        
+        <div class="position-relative" style="z-index: 1;">
+          <div class="position-absolute santa_peek11_top">
+            <img id="santa_peek11" draggable="false" src="{% static 'xmas/decor/xmaspap_peek.png' %}" alt="">
+        </div>
+        </div>
+
         <div class="col-lg-6 col-sm-12 col-md-6 px-3">
-          <div class="content-boxs border-0 rounded-4">
+          <div class="content-boxs border-0 rounded-4 background_img1">
             <h2 class="xmas_text text-light">ERP </h2>
             <div class="img-box-tech image-hidden">
-              <div class="position-relative" style="z-index: 1;">
+              <!-- <div class="position-relative" style="z-index: 1;">
                 <div class="position-absolute" style="margin-top: -5rem;">
                   <img draggable="false" src="{% static 'xmas/decor/light2_duplicate.png' %}" alt="">
               </div>
-              </div>
+              </div> -->
               <img src="static/img/team/erp.png" alt="ERP" />
             </div>
           <p>Accounting, inventory management, customer relationship management, 
@@ -651,11 +694,11 @@ h5 {
         </div>
         <div class="col-lg-6 col-sm-12 col-md-6 px-4 d-flex align-items-center">
           <div class="img-box-tech image-visible">
-            <div class="position-relative" style="z-index: 1;">
+            <!-- <div class="position-relative" style="z-index: 1;">
               <div class="position-absolute" style="margin-top: -10rem;">
                 <img draggable="false" src="{% static 'xmas/decor/light2_duplicate.png' %}" alt="">
             </div>
-            </div>
+            </div> -->
             <!-- <h4 class="hide-head">ERP</h4> -->
             <img src="static/img/team/erp.png" alt="ERP" />
           </div>
@@ -695,6 +738,13 @@ h5 {
           </div>
           
         </div> -->
+
+        <div class="position-relative" style="z-index: 1;">
+          <div class="position-absolute end-0 santa_peek22_top">
+            <img id="santa_peek22" draggable="false" src="{% static 'xmas/decor/xmaspap_peek_left.png' %}" alt="">
+        </div>
+        </div>
+
         <div class="col-lg-6 col-sm-12 col-md-6 px-4 d-flex align-items-center">
           <div class="img-box-tech image-visible">
             <!-- <h4 class="hide-head">CRM</h4> -->
@@ -1002,6 +1052,13 @@ h5 {
 <section class="pb-0">
   <div class="container mt-3">
     <div class="row  g-3 content-boxs-parent">
+
+      <div class="position-relative" style="z-index: 1;">
+        <div class="position-absolute snowman_peek11_top">
+          <img id="snowman_peek11" draggable="false" src="{% static 'xmas/decor/xams_snoman_peek_no_bg_mirror.png' %}" alt="">
+      </div>
+      </div>
+      
       <div class="col-lg-7 col-sm-12 col-md-7 px-1">
         <div class="content-boxs border-0 rounded-4">
           <h2 class="xmas_text text-light">HRMS  </h2>
@@ -1124,6 +1181,13 @@ h5 {
         </div>
         
       </div> -->
+      
+      <div class="position-relative" style="z-index: 1;">
+        <div class="position-absolute end-0 snowman_peek22_top">
+          <img id="snowman_peek22" draggable="false" src="{% static 'xmas/decor/xams_snoman_peek_no_bg_mirror_right.png' %}" alt="">
+      </div>
+      </div>
+
       <div class="col-lg-6 col-sm-12 col-md-6 px-4 d-flex align-items-center">
         <div class="img-box-tech image-visible">
           <!-- <h4 class="hide-head">ERP</h4> -->

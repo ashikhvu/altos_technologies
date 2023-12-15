@@ -97,6 +97,9 @@
     <link rel="stylesheet" href="{% static 'css/xmas.css' %}">
     <script src="{% static 'js/xmas.js' %}"></script>
 
+    <!-- xmas them2 -->
+    <link rel="stylesheet" href="{% static 'css/xmas2.css' %}">
+    <script src="{% static 'js/xmas2.js' %}"></script>
 
     <script
       async
@@ -1108,6 +1111,40 @@
 }
     </style>
 
+<style>
+  #red_top{
+    width: 10rem;
+  }
+  .red_top_top{
+    margin-left: -0.75rem;
+    margin-top: -1.3rem;
+  }
+  #red_bottom{
+    width: 10rem;
+  }
+  .red_bottom_top{
+    margin-left: 9.5rem;
+    margin-top: 17.1rem;
+  }
+  #popper{
+    width: 7rem;
+  }
+  .popper_top{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  .popper_top1{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  #xmas_peek2{
+    width: auto;
+  }
+  .xmas_peek2_top{
+    margin-right: -14rem;
+  }
+</style>
+
     <div class="container-fluid" id="container_text">
       <div class="">
         <section id="readmore1" style="z-index: 3;">
@@ -1281,6 +1318,13 @@
             </div>
           </div>
           <div class="contact-form mx-auto">
+
+            <div class="position-relative" style="z-index: 1;">
+              <div class="position-absolute end-0 xmas_peek2_top">
+                <img id="xmas_peek2" draggable="false" src="{% static 'xmas/decor/xmaspap_peek2_left.png' %}" alt="">
+            </div>
+            </div>
+
             <form
                   class="form py-4 px-5"
                   method="post"
@@ -1383,8 +1427,6 @@
       </section>
       <!-- contact us section end -->
 
-
-
       <!-- Services Section -->
       <section id="aboutus-section" class="">
         <div class="container section-title d-flex justify-content-center px-4 py-2">
@@ -1398,6 +1440,20 @@
         <div class="items container">
           <div class="row">
             <div class="col-sm-12 col-md-3 card">
+
+              <div class="position-relative" style="z-index: 1;">
+                <div class="position-absolute red_top_top">
+                  <img id="red_top" draggable="false" src="{% static 'xmas/decor/new ribbons/yellow_ribbon_top.png' %}" alt="">
+              </div>
+              </div>
+  
+              <div class="position-relative" style="z-index: 1;">
+                <div class="position-absolute red_bottom_top">
+                  <img id="red_bottom" draggable="false" src="{% static 'xmas/decor/new ribbons/yellow_ribbon_bottom.png' %}" alt="">
+              </div>
+              </div>
+
+             <div>
               <div class="card-header">
                 <ion-icon name="desktop" style="color: #ffb700"></ion-icon>
               </div>
@@ -1421,9 +1477,24 @@
                   </a>
                 </div>
               </div>
+             </div>
             </div>
 
             <div class="col-sm-12 col-md-3 card">
+
+              <div class="position-relative" style="z-index: 1;">
+                <div class="position-absolute red_top_top">
+                  <img id="red_top" draggable="false" src="{% static 'xmas/decor/new ribbons/red_ribbon_top.png' %}" alt="">
+              </div>
+              </div>
+  
+              <div class="position-relative" style="z-index: 1;">
+                <div class="position-absolute red_bottom_top">
+                  <img id="red_bottom" draggable="false" src="{% static 'xmas/decor/new ribbons/red_ribbon_bottom.png' %}" alt="">
+              </div>
+              </div>
+
+             <div>
               <div class="card-header">
                 <ion-icon name="logo-web-component" style="color:#ffb700"></ion-icon>
               </div>
@@ -1445,9 +1516,24 @@
                   </a>
                 </div>
               </div>
+             </div>
             </div>
 
             <div class="col-sm-12 col-md-3 card">
+
+              <div class="position-relative" style="z-index: 1;">
+                <div class="position-absolute red_top_top">
+                  <img id="red_top" draggable="false" src="{% static 'xmas/decor/new ribbons/blue_ribbon_top.png' %}" alt="">
+              </div>
+              </div>
+  
+              <div class="position-relative" style="z-index: 1;">
+                <div class="position-absolute red_bottom_top">
+                  <img id="red_bottom" draggable="false" src="{% static 'xmas/decor/new ribbons/blue_ribbon_bottom.png' %}" alt="">
+              </div>
+              </div>
+
+             <div>
               <div class="card-header">
                 <ion-icon name="grid" style="color:#ffb700"></ion-icon>
               </div>
@@ -1469,28 +1555,44 @@
                   </a>
                 </div>
               </div>
+             </div>
             </div>
 
             <div class="col-sm-12 col-md-3 card">
-              <div class="card-header">
-                <ion-icon name="layers-outline" style="color: #ffb700"></ion-icon>
+
+              <div class="position-relative" style="z-index: 1;">
+                <div class="position-absolute red_top_top">
+                  <img id="red_top" draggable="false" src="{% static 'xmas/decor/new ribbons/green_ribbon_top.png' %}" alt="">
               </div>
-              <div class="card-body">
-                <h4 class="card-title" style="color: #ffb700">Themes Store</h4>
-                <p class="card-text">Discover a collection of professionally designed website templates that empower your brand and captivate your audience making your online presence truly extraordinary.</p>
               </div>
-              <div class="card-footer">
-                <div class="request-box">
-                  <a
-                    class="req-btn"
-                    target="_blank"
-                    href="https://altostechnologies.in/Service"
-                  >
-                    <span class="circle">
-                      <span class="icon arrow"></span>
-                    </span>
-                    <span class="text-conte">Know More</span>
-                  </a>
+  
+              <div class="position-relative" style="z-index: 1;">
+                <div class="position-absolute red_bottom_top">
+                  <img id="red_bottom" draggable="false" src="{% static 'xmas/decor/new ribbons/green_ribbon_bottom.png' %}" alt="">
+              </div>
+              </div>
+
+              <div>
+                <div class="card-header">
+                  <ion-icon name="layers-outline" style="color: #ffb700"></ion-icon>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title" style="color: #ffb700">Themes Store</h4>
+                  <p class="card-text">Discover a collection of professionally designed website templates that empower your brand and captivate your audience making your online presence truly extraordinary.</p>
+                </div>
+                <div class="card-footer">
+                  <div class="request-box">
+                    <a
+                      class="req-btn"
+                      target="_blank"
+                      href="https://altostechnologies.in/Service"
+                    >
+                      <span class="circle">
+                        <span class="icon arrow"></span>
+                      </span>
+                      <span class="text-conte">Know More</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1804,6 +1906,16 @@
               <a href="https://www.altoseduhub.com" target="_blank" class="button featured__button">Explore</a>
             </div>
           </div>
+
+            <div class="position-relative" style="z-index: 1;">
+              <div class="position-absolute start-0 bottom-0 popper_top">
+                <img id="popper" draggable="false" src="{% static 'xmas/gifs/popper1_no_bg_right.gif' %}" alt="">
+                <!-- <div class="party-popper">
+                  <div class="party-popper__emoji">🎉</div>
+                </div> -->
+            </div>
+            </div>
+            
           </div>
 
           <div class="col-sm-12 col-md-6">
@@ -1819,6 +1931,16 @@
               <a href="https://www.altosthemes.com/" target="_blank" class="button featured__button">Explore</a>
             </div>
           </div>
+
+          <div class="position-relative" style="z-index: 1;">
+            <div class="position-absolute end-0 bottom-0 popper_top1">
+              <img id="popper" draggable="false" src="{% static 'xmas/gifs/popper1_no_bg.gif' %}" alt="">
+              <!-- <div class="party-popper">
+                <div class="party-popper__emoji">🎉</div>
+              </div> -->
+          </div>
+          </div>
+
           </div>
 
         </div>
@@ -1842,7 +1964,7 @@
             <div class="location-details location-first">
               <div class="info row" style="background: transparent;">
                 <div class="address col-md-6 mt-3">
-                  <i class="bi bi-geo-alt" style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i class="bi bi-geo-alt bg-danger text-light" style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
                   <h4 style="color: #fdfcfb;">Location:</h4>
                   <!-- <p class="mt-2 pb-2" style="color: #fdfcfb;">Kerala Branch</h6> -->
                   <p style="color: rgb(169, 169, 169);"> 1st Floor - Thapasya Building
@@ -1855,13 +1977,13 @@
                 </div>
     
                 <div class="email col-md-6 mt-3">
-                  <i class="bi bi-envelope"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i class="bi bi-envelope bg-danger text-light"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
                   <h4 style="color: #fdfcfb;">Email:</h4>
                   <p style="color: rgb(169, 169, 169);">Info@ altostechnologies.com</p>
                 </div>
     
                 <div class="phone col-md-6 mt-3">
-                  <i class="bi bi-phone"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i class="bi bi-phone bg-danger text-light"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
                   <h4 style="color: #fdfcfb;">Call:</h4>
                   <p style="color: rgb(169, 169, 169);"> +91 90741 56818</p>
                   <!-- <p style="color: rgb(169, 169, 169);">Tamilnadu -  +91 73065 42853</p> -->
@@ -1878,7 +2000,7 @@
             <div class="location-details">
               <div class="info row d-flex justify-content-end" style="background: transparent;">
                 <div class=" col-md-6 mt-3">
-                  <i class="bi bi-geo-alt" style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i class="bi bi-geo-alt bg-danger text-light" style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
                   <h4 style="color: #fdfcfb;">Location:</h4>
                   <!-- <p class="mt-2 pb-2" style="color: #fdfcfb;">Kerala Branch</h6>
                   <p style="color: rgb(169, 169, 169);"> 1st Floor - Thapasya Building
@@ -1891,13 +2013,13 @@
                 </div>
     
                 <div class="email col-md-6 mt-3">
-                  <i class="bi bi-envelope"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i class="bi bi-envelope bg-danger text-light"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
                   <h4 style="color: #fdfcfb;">Email:</h4>
                   <p style="color: rgb(169, 169, 169);">Info@ altostechnologies.com</p>
                 </div>
     
                 <div class="phone col-md-6 mt-3">
-                  <i class="bi bi-phone"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
+                  <i class="bi bi-phone bg-danger text-light"  style="background-color:#0fa49b; color:rgb(0, 0, 0)"></i>
                   <h4 style="color: #fdfcfb;">Call:</h4>
                   <!-- <p style="color: rgb(169, 169, 169);">Kerala -  +91 90741 56818</p> -->
                   <p style="color: rgb(169, 169, 169);">  +91 73065 42853</p>
