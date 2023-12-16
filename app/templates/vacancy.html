@@ -353,7 +353,7 @@
   }
   .training-contentbox
   {
-  grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1,1fr);
   }
   .why-us
   {
@@ -486,6 +486,26 @@ font-size: 0.91.5em;
 }
 }
 
+@media screen  and (min-width:932px){
+  .xmas_gif_style{
+    margin: auto;
+    margin-left: 35%;
+  }
+  .mobile_hide1{
+    display: block;
+  }
+  .mobile_hide2{
+    display: none;
+  }
+}
+@media screen  and (max-width:931px){
+  .mobile_hide1{
+    display: none;
+  }
+  .mobile_hide2{
+    display: block;
+  }
+}
 </style>
 
 <div class="container-fluid">
@@ -534,9 +554,11 @@ font-size: 0.91.5em;
         </div>
 
         <!-- <img width="400rem" style="margin-left: 18rem;margin-top: 15rem;" draggable="false" src="{% static 'xmas/gifs/xmas-silk.gif' %}" alt=""> -->
-        <img width="400rem" style="margin-left: 20rem;margin-top: 7rem;" draggable="false" src="{% static 'xmas/gifs/santa_with_pc.gif' %}" alt="">
+        <img width="400rem" class="xmas_gif_style mobile_hide1" draggable="false" src="{% static 'xmas/gifs/santa_with_pc.gif' %}" alt="">
 
       </div>
+
+      <img width="400rem" class="xmas_gif_style mobile_hide2" draggable="false" src="{% static 'xmas/gifs/santa_with_pc.gif' %}" alt="">
   
 
   </section>
@@ -638,13 +660,14 @@ font-size: 0.91.5em;
     font-size: .93em;
 }
 @media(width <= 932px)
-{  #vacancy .card-info  {
+{  
+  #vacancy .card-info  {
     flex-direction: column;
     gap: 1em;
-}
+  }
 }
   #vacancy .card__meta i.small {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
   #vacancy .card .card-content .card-title {
       line-height: 34px;
