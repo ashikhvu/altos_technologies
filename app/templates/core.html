@@ -602,7 +602,22 @@ h5 {
     margin-right: -7.5rem;
     margin-top: 5rem;
   }
-  
+  @media screen and (max-width:768px) {
+    .hide_for_mob{
+      display: block;
+    }
+    .hide_this_for_desk{
+      display: none;
+    }
+  }
+  @media screen and (min-width:769px) {
+    .hide_for_mob{
+      display: none;
+    }
+    .hide_this_for_desk{
+      display: block;
+    }
+  }
 </style>
 <body>
   
@@ -669,7 +684,7 @@ h5 {
     <div class="container mt-3">
       <div class="row  g-3 content-boxs-parent border-0 rounded-4">
         
-        <div class="position-relative" style="z-index: 1;">
+        <div class="position-relative hide_this_for_desk" style="z-index: 1;">
           <div class="position-absolute santa_peek11_top">
             <img id="santa_peek11" draggable="false" src="{% static 'xmas/decor/xmaspap_peek.png' %}" alt="">
         </div>
@@ -691,13 +706,14 @@ h5 {
             <p>Moreover, your staff will have no trouble using and navigating our ERP software because of its user-friendly design. With the help of our software, you may automate routine processes, lower error rates, and boost productivity.
           </p>
           </div>
-            <div class="km-button my-5">
-              <div class="position-relative">
-              <a role="button" href="/contact" class="knowmore-button text-white">Know More</a>
-              <div class="position-absolute start-0 bottom-0" style="margin-left: 7.5rem;margin-bottom: -2rem;">
-                <img style="width: 5rem;" draggable="false" src="{% static 'xmas/decor/xmaspap_peek_left.png' %}" alt="">
-              </div>
+
+          <div class="position-relative hide_for_mob">
+            <div class="position-absolute" style="margin-left: 5.4rem;margin-top: 0.2rem;">
+              <img width="100rem" draggable="false" src="{% static 'xmas/decor/xmaspap_peek_left.png' %}" alt="">
+            </div>
           </div>
+
+          <div class="km-button my-5"><a role="button" href="/contact" class="knowmore-button text-white">Know More</a></div>
         </div>
         <div class="col-lg-6 col-sm-12 col-md-6 px-4 d-flex align-items-center">
           <div class="img-box-tech image-visible">
@@ -746,7 +762,7 @@ h5 {
           
         </div> -->
 
-        <div class="position-relative" style="z-index: 1;">
+        <div class="position-relative hide_this_for_desk" style="z-index: 1;">
           <div class="position-absolute end-0 santa_peek22_top">
             <img id="santa_peek22" draggable="false" src="{% static 'xmas/decor/xmaspap_peek_left.png' %}" alt="">
         </div>
@@ -790,7 +806,14 @@ h5 {
             
           </p>
           </div>
-          <div class="km-button my-4"><a role="button" href="/contact" class="knowmore-button text-white">Know More</a></div>
+
+          <div class="position-relative hide_for_mob">
+            <div class="position-absolute" style="margin-left: 5.4rem;margin-top: 0.2rem;">
+              <img width="100rem" draggable="false" src="{% static 'xmas/decor/xmaspap_peek_left.png' %}" alt="">
+            </div>
+          </div>
+
+          <div class="km-button my-5"><a role="button" href="/contact" class="knowmore-button text-white">Know More</a></div>
         </div>
       </div>
     </div>
@@ -1060,7 +1083,7 @@ h5 {
   <div class="container mt-3">
     <div class="row  g-3 content-boxs-parent">
 
-      <div class="position-relative" style="z-index: 1;">
+      <div class="position-relative hide_this_for_desk" style="z-index: 1;">
         <div class="position-absolute snowman_peek11_top">
           <img id="snowman_peek11" draggable="false" src="{% static 'xmas/decor/xams_snoman_peek_no_bg_mirror.png' %}" alt="">
       </div>
@@ -1096,7 +1119,14 @@ h5 {
           their employment information.
         </p>
         </div>
-        <div class="km-button my-4"><a role="button" href="/contact" class="knowmore-button text-white">Know More</a></div>
+
+        <div class="position-relative hide_for_mob">
+          <div class="position-absolute" style="margin-left: 8.5rem;margin-top: -0.5rem;">
+            <img width="70rem" draggable="false" src="{% static 'xmas/decor/xams_snoman_peek_no_bg_mirror_right.png' %}" alt="">
+          </div>
+        </div>
+
+        <div class="km-button my-5"><a role="button" href="/contact" class="knowmore-button text-white">Know More</a></div>
       </div>
       <div class="col-lg-5 col-sm-12 col-md-5 px-4 d-flex align-items-center">
         <div class="img-box-tech image-visible">
@@ -1189,7 +1219,7 @@ h5 {
         
       </div> -->
       
-      <div class="position-relative" style="z-index: 1;">
+      <div class="position-relative hide_this_for_desk" style="z-index: 1;">
         <div class="position-absolute end-0 snowman_peek22_top">
           <img id="snowman_peek22" draggable="false" src="{% static 'xmas/decor/xams_snoman_peek_no_bg_mirror_right.png' %}" alt="">
       </div>
@@ -1236,7 +1266,14 @@ h5 {
 
         </p>
         </div>
-        <div class="km-button my-4"><a role="button" href="/contact" class="knowmore-button text-white">Know More</a></div>
+
+        <div class="position-relative hide_for_mob">
+          <div class="position-absolute" style="margin-left: 8.5rem;margin-top: -0.5rem;">
+            <img width="70rem" draggable="false" src="{% static 'xmas/decor/xams_snoman_peek_no_bg_mirror_right.png' %}" alt="">
+          </div>
+        </div>
+
+        <div class="km-button my-5"><a role="button" href="/contact" class="knowmore-button text-white">Know More</a></div>
       </div>
       <!-- <div class="col-lg-6 col-sm-12 col-md-6">
         <div class="content-boxs">
