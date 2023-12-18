@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'Altots.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'infoxtec_altosdbtesting',
+        'NAME': 'infoxtec_altostechnologies',
         'USER':'root',
         'PASSWORD':'password',
         'HOST':'127.0.0.1',
