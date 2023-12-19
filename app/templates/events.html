@@ -560,10 +560,42 @@
       grid-template-columns: repeat(1,1fr);
       }
     }
-    
+    #xmas_elf2{
+        width: 8.5rem;
+    }
+    .xmas_elf2_top{
+      margin-top: -8rem;
+      margin-right: 8rem;
+    }
+    @media screen and (max-width:420px) {
+      #xmas_elf2{
+        width: 4rem;
+      }
+      .xmas_elf2_top{
+        margin-top: -4rem;
+        margin-right: 2rem;
+      }
+    }
+    @media screen and (min-width:421px) and (max-width:767px) {
+      #xmas_elf2{
+        width: 6rem;
+      }
+      .xmas_elf2_top{
+        margin-top: -6rem;
+        margin-right: 5rem;
+      }
+    }
+    @media screen and (min-width:992px) and (max-width:1199px) {
+      #xmas_elf2{
+        width: 6rem;
+      }
+      .xmas_elf2_top{
+        margin-top: -6rem;
+        margin-right: 15rem;
+      }
+    }
    
  </style>
-
 
 
     <section id="team" class="team teame2">
@@ -571,9 +603,14 @@
 
         <div class="section-title">
           <h2>Events</h2>
-          <p>Check our Events</p>
+          <p class="xmas_text">Check our Events</p>
         </div>
 
+        <div class="position-relative">
+          <div class="position-absolute top-0 end-0 xmas_elf2_top">
+            <img id="xmas_elf2" src="{% static 'xmas/decor/xmas_elf2_low.png' %}" alt="">
+          </div>
+        </div>
         <div class="container events-box">
           {% for i in allevents %}
             <div class="card">
@@ -599,9 +636,13 @@
        
             
           {% for i in pos %}
-           
+
               <div class="card">
-               
+                <div class="position-relative">
+                  <div class="position-absolute end-0" style="margin-top: -0.1rem;margin-right: -0.1rem;">
+                    <img draggable="false" width="100rem" src="{% static 'xmas/decor/xmas_ball3.png' %}" alt="">
+                  </div>
+                </div>
                   {% if i.ps_img %}
                   <div class="poster-img">
                     <a href="{{i.ps_img.url}}" download="{{i.ps_img.url}}">
@@ -664,23 +705,42 @@
       }
     </style>
 
+    <style>
+      /* .img_bg{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.735),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(255, 255, 255, 0));;
+      } */
+      .xmas_text{
+        color: white;
+        text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.797);
+      }
+    </style>
+
     <section>
       <div class="container" >
     
         <div class="section-title">
           <h2>Gallery</h2>
-          <p>Check our Gallery</p>
+          <p class="xmas_text">Check our Gallery</p>
         </div>
 
         <div class="galleryBox">
           {% for imgs in allimage %}
           <div class="card imge__card">
             {% if imgs.gallery_img%}
-            <img src="{{imgs.gallery_img.url}}" alt="Best software company in kerala">
+            <div class="position-relative">
+              <div class="position-absolute">
+                <img draggable="false" style="height: 13.9rem;width: 17rem;" src="{% static 'xmas/decor/event_image_frame.png' %}" alt="">
+              </div>
+            </div>
+            <!-- <div class="position-relative">
+              <div class="position-absolute start-0" style="margin-top: -2rem;margin-left: -2.1rem;">
+                <img style="height: 17.6rem;width: 20.9rem;" src="{% static 'xmas/decor/event_image_frame.png' %}" alt="">
+              </div>
+            </div> -->
+            <img class="rounded" src="{{imgs.gallery_img.url}}" alt="Best software company in kerala">
             {% endif %}
           </div>
           {% endfor %}
-          
         </div>
       </div>
     </section>
